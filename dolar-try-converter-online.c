@@ -46,7 +46,7 @@ int main(void)
     init_string(&s);
 
     curl_easy_setopt(curl, CURLOPT_CAINFO, "./cacert.pem");
-    curl_easy_setopt(curl, CURLOPT_URL, "https://babico.tk/kur/trytousd.php");
+    curl_easy_setopt(curl, CURLOPT_URL, "http://babico.tech/kur/trytousd.php");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writefunc);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &s);
     
