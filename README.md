@@ -3,7 +3,7 @@
 %1  Me  
 
 ## A little note for compiling  
-1-  Install curl to MinGW.  
+1-  Install [curl](https://curl.se/windows/) to MinGW.  
 2-  Download [here](https://curl.haxx.se/docs/sslcerts.html) the SSL certificate for curl. They must be in the same file with source code.   
 3-  Compile with the code below.  
     ```
