@@ -8,5 +8,5 @@
 
 3-  Compile with the code below.  
     ```
-      gcc .\dolar-try-converter-online.c -o .\dolar-try-converter-online.exe -lcurl -L C:\MinGW\lib
+      gcc .\dolar-try-converter-online.c -o .\dolar-try-converter-online.exe -lcurl -L C:\<MingW location>\lib
     ```
