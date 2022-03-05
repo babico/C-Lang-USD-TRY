@@ -51,7 +51,7 @@ int main(void)
     init_string(&s);
 
     curl_easy_setopt(curl, CURLOPT_CAINFO, "./cacert.pem");
-    curl_easy_setopt(curl, CURLOPT_URL, "http://babico.tech/kur/trytousd.php");
+    curl_easy_setopt(curl, CURLOPT_URL, "https://babico.name.tr/kur/trytousd.php");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writefunc);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &s);
 
@@ -64,10 +64,10 @@ int main(void)
     curl_easy_cleanup(curl);
 
     float para;
-    printf("Kac dolariniz var: ");
+    printf("How many dollars do you have: ");
     scanf("%f", &para);
     float sonuc = strtof(s.ptr, NULL) * para;
-    printf("%.2f ABD Dolari %f kadar Turk Lirasina esit.\n", para, sonuc);
+    printf("%.2f US Dollars equal to %f Turkish Liras.\n", para, sonuc);
   }
 
   curl_global_cleanup();
