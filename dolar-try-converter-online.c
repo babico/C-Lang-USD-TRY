@@ -63,11 +63,11 @@ int main(void)
     }
     curl_easy_cleanup(curl);
 
-    float para;
+    double para;
     printf("How many dollars do you have: ");
-    scanf("%f", &para);
-    float sonuc = strtof(s.ptr, NULL) * para;
-    printf("%.2f US Dollars equal to %f Turkish Liras.\n", para, sonuc);
+    scanf("%lf", &para);
+    double sonuc = strtof(s.ptr, NULL) * para;
+    printf("%.2lf US Dollars equal to %lf Turkish Liras.\n", para, sonuc);
   }
 
   curl_global_cleanup();
