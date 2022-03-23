@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe etkin dosyayı derle",
+            "command": "D:\\Program Files (x86)\\MingW64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lcurl",
+                "-L",
+                "D:\\Program Files (x86)\\MingW64\\bin\\lib"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Hata Ayıklayıcısı tarafından oluşturulan görev."
+        }
+    ],
+    "version": "2.0.0"
+}
